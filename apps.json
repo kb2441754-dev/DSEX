@@ -1,0 +1,95 @@
+[
+  {
+    "name": "DSEX Dashboard",
+    "img": "",
+    "img_dark": "",
+    "img_light": "",
+    "description": "Full Dhaka Stock Exchange Broad Index (DSEX) dashboard — live prices, top movers, sector breakdown, and constituent list.",
+    "allowCustomization": true,
+    "tabs": {
+      "overview": {
+        "id": "overview",
+        "name": "Overview",
+        "layout": [
+          {
+            "i": "dsex_market_overview",
+            "x": 0,
+            "y": 0,
+            "w": 20,
+            "h": 12,
+            "state": { "params": {} }
+          },
+          {
+            "i": "dsex_sector_chart",
+            "x": 20,
+            "y": 0,
+            "w": 20,
+            "h": 12,
+            "state": { "params": { "chart_type": "bar" } }
+          },
+          {
+            "i": "dsex_top_gainers",
+            "x": 0,
+            "y": 12,
+            "w": 20,
+            "h": 18,
+            "state": { "params": { "limit": "20" } }
+          },
+          {
+            "i": "dsex_top_losers",
+            "x": 20,
+            "y": 12,
+            "w": 20,
+            "h": 18,
+            "state": { "params": { "limit": "20" } }
+          }
+        ]
+      },
+      "prices": {
+        "id": "prices",
+        "name": "Live Prices",
+        "layout": [
+          {
+            "i": "dsex_live_prices",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 28,
+            "state": { "params": { "sector": "All" } }
+          }
+        ]
+      },
+      "constituents": {
+        "id": "constituents",
+        "name": "Constituents",
+        "layout": [
+          {
+            "i": "dsex_constituents",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 22,
+            "state": { "params": { "sector": "All", "industry": "All" } }
+          },
+          {
+            "i": "dsex_sector_summary",
+            "x": 0,
+            "y": 22,
+            "w": 20,
+            "h": 18,
+            "state": { "params": {} }
+          },
+          {
+            "i": "dsex_sector_chart",
+            "x": 20,
+            "y": 22,
+            "w": 20,
+            "h": 18,
+            "state": { "params": { "chart_type": "pie" } }
+          }
+        ]
+      }
+    },
+    "groups": []
+  }
+]

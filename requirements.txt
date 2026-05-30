@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+requests
+pandas
+plotly
+beautifulsoup4
+lxml
+bdshare

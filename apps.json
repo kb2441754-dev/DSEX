@@ -1,0 +1,113 @@
+[
+  {
+    "name": "DSEX Dashboard",
+    "img": "",
+    "img_dark": "",
+    "img_light": "",
+    "description": "Full Dhaka Stock Exchange (DSEX) workspace — live prices, TradingView charting, top movers, sector analysis, and sandbox-style company deep-dives.",
+    "allowCustomization": true,
+    "tabs": {
+
+      "overview": {
+        "id": "overview",
+        "name": "Overview",
+        "layout": [
+          {
+            "i": "dsex_market_overview",
+            "x": 0, "y": 0, "w": 20, "h": 12,
+            "state": { "params": {} }
+          },
+          {
+            "i": "dsex_sector_chart",
+            "x": 20, "y": 0, "w": 20, "h": 12,
+            "state": { "params": { "chart_type": "bar" } }
+          },
+          {
+            "i": "dsex_top_gainers",
+            "x": 0, "y": 12, "w": 20, "h": 18,
+            "state": { "params": { "limit": "20" } }
+          },
+          {
+            "i": "dsex_top_losers",
+            "x": 20, "y": 12, "w": 20, "h": 18,
+            "state": { "params": { "limit": "20" } }
+          }
+        ]
+      },
+
+      "prices": {
+        "id": "prices",
+        "name": "Live Prices + Chart",
+        "layout": [
+          {
+            "i": "dsex_live_prices",
+            "x": 0, "y": 0, "w": 20, "h": 28,
+            "state": { "params": { "sector": "All" } },
+            "groups": []
+          },
+          {
+            "i": "dsex_tv_chart",
+            "x": 20, "y": 0, "w": 20, "h": 28,
+            "state": { "params": { "symbol": "GP" } },
+            "groups": []
+          }
+        ]
+      },
+
+      "constituents": {
+        "id": "constituents",
+        "name": "Constituents",
+        "layout": [
+          {
+            "i": "dsex_constituents",
+            "x": 0, "y": 0, "w": 40, "h": 22,
+            "state": { "params": { "sector": "All", "industry": "All" } }
+          },
+          {
+            "i": "dsex_sector_summary",
+            "x": 0, "y": 22, "w": 20, "h": 18,
+            "state": { "params": {} }
+          },
+          {
+            "i": "dsex_sector_chart",
+            "x": 20, "y": 22, "w": 20, "h": 18,
+            "state": { "params": { "chart_type": "pie" } }
+          }
+        ]
+      },
+
+      "company_analysis": {
+        "id": "company_analysis",
+        "name": "Company Analysis (Sandbox)",
+        "layout": [
+          {
+            "i": "dsex_ticker_profile",
+            "x": 0, "y": 0, "w": 20, "h": 14,
+            "state": { "params": { "symbol": "GP" } },
+            "groups": ["DSEX Company"]
+          },
+          {
+            "i": "dsex_valuation_metrics",
+            "x": 20, "y": 0, "w": 20, "h": 14,
+            "state": { "params": { "symbol": "GP" } },
+            "groups": ["DSEX Company"]
+          },
+          {
+            "i": "dsex_price_performance",
+            "x": 0, "y": 14, "w": 20, "h": 14,
+            "state": { "params": { "symbol": "GP" } },
+            "groups": ["DSEX Company"]
+          },
+          {
+            "i": "dsex_technical_gauge",
+            "x": 20, "y": 14, "w": 20, "h": 14,
+            "state": { "params": { "symbol": "GP" } },
+            "groups": ["DSEX Company"]
+          }
+        ]
+      }
+
+    },
+    "groups": []
+  }
+]
